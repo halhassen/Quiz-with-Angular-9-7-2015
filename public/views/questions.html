@@ -1,0 +1,17 @@
+<div ng-controller="HomeController">
+	<div ng-repeat="q in vm.questions">
+		<!--Have the page recognize which question number the user is on-->
+		<!--Have all of this wrapped by a QuestionController which will have ng-submit, which will
+		submit the quiz -->
+		<div class="well container">
+			<form>
+				<h4>{{q.ask}}</h4><br>
+				<input type="radio" name="answer"/>  {{q.a1}}<br>
+				<input type="radio" name="answer"/>  {{q.a2}}<br>
+				<input type="radio" name="answer"/>  {{q.a3}}<br>
+				<input type="radio" name="answer"/>  {{q.a4}}<br>
+			</form>
+		</div><br><br>
+	</div>
+	<button type="btn" class="btn btn-default" ng-click="vm.submitAnswers()">Submit Answer</button>
+</div>
