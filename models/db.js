@@ -17,9 +17,9 @@ var Question = function(ask, a1, a2, a3, a4, correct) {
 db.QuestionDatabase = [];
 db.QuestionDatabase.push(new Question('Which rapper said this?: "Why is the sky blue, why is water wet, why did Judas rat to Romans while Jesus slept?"', "Drake", "Mos Def", "Ghostface Killah", "Jay-Z", "Ghostface Killah"));
 db.QuestionDatabase.push(new Question('Who made this quiz?', "Pau Gasol", "George Bush", "Jidenna", "Hamad Alhassen", "Hamad Alhassen"));
-db.QuestionDatabase.push(new Question("Which of the following movies did NOT come out in the 21st century?", "Juice", "Mad Max: Fury Road", "Chef", "Kung Fu Hustle", "Juice"));
-db.QuestionDatabase.push(new Question("Who won the 2001 NBA MVP award?", "Chris Kaman", "Allen Iverson", "Connie Hawkins", "Lavoy Allen", "Allen Iverson"));
-db.QuestionDatabase.push(new Question("Which of the following is objectively the best food?", "A burrito", "A pizza", "A peanut butter & jelly sandwich", "Quinoa", "A burrito"));
+db.QuestionDatabase.push(new Question('Which of the following movies did NOT come out in the 21st century?', 'Juice', 'Mad Max: Fury Road', 'Chef', 'Kung Fu Hustle', 'Juice'));
+db.QuestionDatabase.push(new Question('Who won the 2001 NBA MVP award?', 'Chris Kaman', 'Allen Iverson', 'Connie Hawkins', 'Lavoy Allen', 'Allen Iverson'));
+db.QuestionDatabase.push(new Question('Which of the following is objectively the best food?', 'A burrito', 'A pizza', 'A peanut butter & jelly sandwich', 'Quinoa', 'A burrito'));
 
 //Will use for a future part of the app, such as calling individual questions for their own page
 db.findQuestion = function(id, cb) {

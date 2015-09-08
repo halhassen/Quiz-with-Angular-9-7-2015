@@ -27,7 +27,7 @@ router.get('/Quiz', function(req, res) {
 });
 
 //Get /finished
-router.get('Finished', function(req, res) {
+router.get('/finished', function(req, res) {
 	console.log("Finished!")
 })
 
