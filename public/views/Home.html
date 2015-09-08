@@ -1,8 +1,10 @@
 <div ng-controller="HomeController as vm">
-	<h3 class="text-center">Take the quiz?</h3>
+	<h1 class="text-center">Take the quiz?</h1>
 	<!--For now, just make a simple quiz so it at least shows up, inputs with angular functionality and all-->
 	<!-- Use an ng-if or ng-show to display the score at the end in the div below-->
 	<div class="well container text-center">
+		<h4>There is a good chance you may get all or nothing correct, but I care if you try. It would really warm my heart if you did.</h4><br>
+		<img id="introPic" src="https://pbs.twimg.com/media/CNDQHvRUcAAQhcL.jpg" class="img img-rounded"/><br><br>
 		<button type="btn" ng-click="vm.startQuiz()" class="btn btn-lg btn-success">Start The Quiz!</button>
 	</div>
 

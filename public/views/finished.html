@@ -1,1 +1,17 @@
-<!-- show grade and the correct answers -->
+<div ng-controller="HomeController as vm">
+	<div class="text-center">	
+		<h1 class="page-header">Quiz Results</h1>
+		<h2>{{vm.grade}}</h2><br>
+	</div>
+	<h3>These are the correct answers:</h3>
+	<ol>
+		<li><h4>{{vm.questions[0].correct}}</h4></li>
+		<li><h4>{{vm.questions[1].correct}}</h4></li>
+		<li><h4>{{vm.questions[2].correct}}</h4></li>
+		<li><h4>{{vm.questions[3].correct}}</h4></li>
+		<li><h4>{{vm.questions[4].correct}}</h4></li>
+	</ol><hr>
+	<div class="text-center">
+		<button type="btn" ng-click="vm.restart();" class="btn-warning btn btn-lg">Retry The Quiz?</button>
+	</div>
+</div>

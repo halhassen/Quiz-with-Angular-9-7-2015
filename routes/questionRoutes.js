@@ -26,8 +26,10 @@ router.get('/Quiz', function(req, res) {
 	res.send(questions.QuestionDatabase)
 });
 
+//Get /finished
+router.get('Finished', function(req, res) {
+	console.log("Finished!")
+})
+
 
 module.exports = router;
-/*whether on a routes page or homefactory, run a 
-Mathrandom function (or in the constructor in db.js), to assign a number.
-Questions will be in a certain order based on each questions's Math.random() */

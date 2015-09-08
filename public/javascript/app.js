@@ -20,9 +20,9 @@
 			controller: "HomeController",
 			controllerAs: "vm"
 		}).state('Finished', {
-			url:'/finished_questions',
+			url:'/finished',
 			templateUrl: "/views/finished.html",
-			controller: "FinishedController",
+			controller: "HomeController",
 			controllerAs: "vm"
 		});
 		$urlRouterProvider.otherwise('/');
