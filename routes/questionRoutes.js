@@ -22,7 +22,7 @@ router.param('id', function(req, res, next, id) {
 
 //Get /questions
 router.get('/Quiz', function(req, res) {
-	console.log(questions.QuestionDatabase);
+	//console.log(questions.QuestionDatabase);
 	res.send(questions.QuestionDatabase)
 });
 
